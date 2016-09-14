@@ -71,4 +71,4 @@
 		    return /vstar/ig.test(ua);
 		}
 	};
-}, "kk_UAKit");
+}, "browser");
