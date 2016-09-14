@@ -17,7 +17,7 @@
 		},
 		//IE11没有“MSIE” 没有包括Edge
 		isIE: function(){
-			return /(msie\s|trident.*rv:)(\d+)/i.test(ua);
+			return /(MSIE\s|trident.*rv:)(\d+)/i.test(ua);
 		},
 		//IE5与IE7不能区分 不能区分Edge
 		getIEVersion: function () {
