@@ -1,3 +1,4 @@
+"use strict";
 ;(function(global, factory, exportsName){
 	"use strict";
 	if (typeof module === "object" && module.exports){
@@ -43,6 +44,12 @@
 				return false;
 			cookie = encodeURIComponent(key) + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT" + (domain ? ";domain=" + domain : "") + (path ? "path=" + path : "");
 			return true;
+		},
+		clearAll: function(path, domain){
+			var keys = cookie.replace(/((?:^|\s*;)[^\=]+)(?=;|$)|^\s*|\s*(?:\=[^;]*)?(?:\1|$)/g, "").split(/\s*(?:\=[^;]*)?;\s*/);
+			for (var i = 0; i < keys.length; i++) { 
+				cookie.delCookie(keys[i], path, domain);
+			}
 		},
 		keys: function(){
 			var keys = cookie.replace(/((?:^|\s*;)[^\=]+)(?=;|$)|^\s*|\s*(?:\=[^;]*)?(?:\1|$)/g, "").split(/\s*(?:\=[^;]*)?;\s*/);
