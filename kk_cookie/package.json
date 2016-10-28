@@ -1,0 +1,29 @@
+{
+  "name": "kk_cookie",
+  "version": "1.0.0",
+  "description": "cookie操作",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuyuanquan/kk_module.git"
+  },
+  "keywords": [
+    "cookie"
+  ],
+  "author": {
+    "name": "刘源泉",
+    "email": "522703297@qq.com"
+  },
+  "readmeFilename": "README.md",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liuyuanquan/kk_module/issues"
+  },
+  "homepage": "https://github.com/liuyuanquan/kk_module#readme"
+}
