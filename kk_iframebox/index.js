@@ -18,7 +18,7 @@
 			$mask = null;//一定要重置为null
 		} else {
 			if (!$('#JS_kankan_mask').length) {
-				$mask = $('<div id="JS_kankan_mask" style="position:fixed;top:0;bottom:0;left:0;right:0;zIndex:99999;background:url(./image/ie-bg.png)\\9;background:rgba(0,0,0,.7);"></div>');
+				$mask = $('<div id="JS_kankan_mask" style="position:fixed;top:0;bottom:0;left:0;right:0;z-index:99999;background:url(./image/ie-bg.png)\\9;background:rgba(0,0,0,.7);"></div>');
 				$mask.prependTo($('body'));
 			}
 		}
