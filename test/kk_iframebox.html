@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ch-ZN">
+    <head>
+        <meta charset="utf-8">
+        <title>测试iframebox.js</title>
+        <style>
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+            body {
+                background: url(./image/ty.jpg)\9 0\9 0\9 repeat-x\9;
+                background: url(./image/ty.jpg) 0 0/auto 100% repeat-x;
+            }
+        </style>
+    </head>
+    <body>
+        <a href='javascript:;' onclick='showIframeBox();' style='color:red'>点击我打开iframebox</a>
+        <script src='../jquery.min.js'></script>
+        <script src='../kk_iframebox/index.js'></script>
+        <script>
+            function showIframeBox() {
+                iframebox.show({
+                    width: 650,
+                    height: 650,
+                    src: 'http://vod.kankan.com/webapp/topic/starzone/v.html?movieid=91644&subid=516754&atype=000&nextF=1',
+                    closeBtn: true,
+                    maskClick: {
+                        close: false,
+                        callback: function() {
+                            console.log('你点击了mask');
+                        }
+                    }
+                });
+            }
+        </script>
+    </body>
+</html>
